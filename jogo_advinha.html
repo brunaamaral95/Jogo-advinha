@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de advinha</title>
+</head>
+<body>
+    <script>
+         function pulaLinha() {
+        document.write("<br>");
+       }
+
+       function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+        }
+
+            
+        var numeroPensado = Math.round (Math.random() * 10);
+        console.log(numeroPensado);
+        var chute = parseInt(prompt("Digite seu chute!"));
+        
+
+
+        if( chute == numeroPensado){
+            mostra("você acertou!");
+
+        }else{
+            mostra("Você errou, o número pensado foi " + numeroPensado);
+        }
+    </script>
+</body>
+</html>
+
+        <!--a função Math.random(), que gera um número aleatório. Todas as vezes em que pressionarmos Enter surgirá um novo número. Entretanto, queremos que seja gerado um número entre 0 e 10.-->
+        <!-- se o o numero que o usuário digitar for  verdadeiro ele vai mostrar a mensagem você acertou-->
+        <!--usei o console.log para fazer o teste de qual número ele vai gerar-->
